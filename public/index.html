@@ -1,17 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blog CRUD</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h2>Create Blog</h2>
-  <input id="title" placeholder="Title">
-  <input id="body" placeholder="Body">
-  <button onclick="createBlog()">Create</button>
+  <div class="container">
+    <header>
+      <h1>My Blog</h1>
+    </header>
 
-  <h2>Blogs</h2>
-  <ul id="list"></ul>
+    <section class="create-blog">
+      <h2>Create a New Blog</h2>
+      <input id="title" placeholder="Title">
+      <textarea id="body" placeholder="Write your blog here..."></textarea>
+      <button onclick="createBlog()">Create</button>
+    </section>
+
+    <section class="blog-list">
+      <h2>Blogs</h2>
+      <ul id="list"></ul>
+    </section>
+  </div>
 
   <script src="scripts.js"></script>
 </body>
